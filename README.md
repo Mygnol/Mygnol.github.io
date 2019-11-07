@@ -1,1 +1,0 @@
-# Mygnol.github.io
