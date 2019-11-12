@@ -1,0 +1,52 @@
+body{
+	background-color:#f4f4f4;
+	color:#5c4200;
+	font-family: Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+
+h1{
+	font-size:32px;
+	text-align: center;
+	margin:0;
+}
+
+p{
+	font-family: Arial, sans-serif;
+	text-align: justify;
+	font-size:16px;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.main-header{
+	margin-top:50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container{
+	text-align: center;
+}
+
+.lineBreak{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navbar ul{
+	margin:0;
+	list-style: none;
+}
+
+#navbar li{
+	display:inline;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
