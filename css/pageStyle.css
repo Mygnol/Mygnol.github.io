@@ -6,6 +6,7 @@ body{
 	margin:0;
 
 	overflow-x: hidden;
+	min-width: 800px;
 }
 
 
@@ -16,17 +17,28 @@ h1{
 }
 
 p{
+	color: #565656;
 	font-family: Arial, sans-serif;
-	text-align: justify;
+	text-align: center;
 }
 
 em{
-	text-align: justify;
+	text-align: center;
+}
+
+strong{
+	color: #bd8801;
 }
 
 .container{
-	text-align: center;
-	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+
+	padding: 5px;
+
+	min-width: 800px;
+	max-width: 800px;
 }
 
 .header{
@@ -58,12 +70,13 @@ em{
 }
 
 #navbar ul{
+	text-align: center;
 	margin:0;
 	list-style: none;
 }
 
 #navbar li{
-	display:inline;
+	display:inline-block;
 	margin-left: 20px;
 	margin-right: 20px;
 	width: 150px;
@@ -71,20 +84,26 @@ em{
 
 /*PROJECT BOX*/
 
-#projectBox{
+#project-box{
+	background-image: url("../images/block_bg.png");
+	background-size: cover;
+	position: relative;
+
+	/*
 	border: 10px solid #bd8801;
+	*/
 
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
 
-	padding: 5px;
+	padding: 25px;
 
 	min-width: 800px;
 	max-width: 800px;
 }
 
-#projectBox::before{
+#project-box::before{
 	content: "";
 	width: 1px;
 	margin-left: -1px;
@@ -93,34 +112,48 @@ em{
 	/*padding-top: 591.44px/1127.34px*100%;*/
 }
 
-#projectBox::after{
+#project-box::after{
 	content: "";
 	display: table;
 	clear: both;
 }
 
-#projectBox h1{
-	color:#bd8801;
+#project-box h1{
+	color:#202020;
 	text-align: left;
 }
 
-#projectBox p{
+#project-box p{
+	color: #565656;
 	text-align: left;
 	margin: auto;
 }
 
-#projectBox a{
+#project-box a{
 	text-align: left;
-	color:#fff;
+	color:#565656;
 }
 
-#projectBox img{
-	float:left;
-	padding-right: 20px;
+#project-box em{
+	color: #bd8801;
+}
 
+#project-box img{
+	float:left;
 	max-height: 100%;
 	max-width: 100%;
 	object-fit: contain;
 }
 
+
+.project-box-main-icon
+{
+	padding-right: 20px;
+}
+.project-box-inline-icons
+{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
 
