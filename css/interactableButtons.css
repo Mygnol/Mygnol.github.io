@@ -1,0 +1,86 @@
+.buttonAbout{
+	width: 208px;
+	height: 77px;
+	background: url(../images/button_About.png) no-repeat;
+	display: inline-block;
+
+	margin: 0;
+}
+
+.buttonAbout:hover{
+	background: url(../images/button_About_sel.png) no-repeat;
+}
+
+.buttonProjects{
+	width: 208px;
+	height: 77px;
+	background: url(../images/button_Projects.png) no-repeat;
+	display: inline-block;
+
+	margin: 0;
+}
+
+.buttonProjects:hover{
+	background: url(../images/button_About_sel.png) no-repeat;
+}
+
+.buttonContact{
+	width: 208px;
+	height: 77px;
+	background: url(../images/button_Contact.png) no-repeat;
+	display: inline-block;
+
+	margin: 0;
+}
+
+.buttonContact:hover{
+	background: url(../images/button_About_sel.png) no-repeat;
+}
+
+.buttonResume{
+	width: 208px;
+	height: 77px;
+	background: url(../images/button_Resume.png) no-repeat;
+	display: inline-block;
+
+	margin: 0;
+}
+
+.buttonResume:hover{
+	background: url(../images/button_About_sel.png) no-repeat;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

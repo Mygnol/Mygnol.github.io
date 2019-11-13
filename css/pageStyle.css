@@ -74,6 +74,9 @@ strong{
 	margin-right: auto;
 }
 
+
+/*navbar*/
+
 #navbar ul{
 	text-align: center;
 	margin-left: auto;
@@ -93,22 +96,16 @@ strong{
 /*PROJECT BOX*/
 
 #project-box{
-	background-image: url("../images/block_bg.png");
-	background-size: cover;
+	border: 10px solid #bd8801;
 	position: relative;
 
-	/*
-	border: 10px solid #bd8801;
-	*/
-
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 30%;
+	margin-right: 30%;
 	margin-bottom: 10px;
 
-	padding: 25px;
+	padding: 10px;
 
-	min-width: 800px;
-	max-width: 800px;
+	min-width: 400px;
 }
 
 #project-box::before{
@@ -128,6 +125,12 @@ strong{
 
 #project-box h1{
 	color:#202020;
+	text-align: left;
+}
+
+#project-box h2{
+	color:#bd8801;
+	margin-bottom: 0;
 	text-align: left;
 }
 
@@ -158,10 +161,11 @@ strong{
 {
 	padding-right: 20px;
 }
+
 .project-box-inline-icons
 {
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
+	bottom: 0%;
+	right: 0%;
 }
 

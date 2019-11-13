@@ -4,7 +4,9 @@
 	<title>
 		Long | Home
 	</title>
+	<script src="js/projectBox.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/pageStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/interactableButtons.css">
 </head>
 <body>
 	<header id="main-header">
@@ -21,18 +23,18 @@
 
 		<img src = "images/lineBreak.png" class = "lineBreak">
 
-			<ul>
-				<li><img src = "images/button_About.png" alt="About" width="150"></li>
-				<li><img src = "images/button_Projects.png" alt="Portfolio" width="150"></li>
-				<li><img src = "images/button_Contact.png" alt="Contact" width="150"></li>
-				<li><img src = "images/button_Resume.png" alt="Resume" width="150"></li>
-			</ul>
+		<ul>
+			<a href="#about"><div class = "buttonAbout"></div></a>
+			<a href="#projects"><div class = "buttonProjects"></div></a>
+			<a href="#contact"><div class = "buttonContact"></div></a>
+			<a href="#resume"><div class = "buttonResume"></div></a>
+		</ul>
 
 		<img src = "images/lineBreak.png" class = "lineBreak">
 	</nav>
 
 	<!--ABOUT -->
-	<img src = "images/heading_About.png" class = "header">
+	<a name="about"><img src = "images/heading_About.png" class = "header"></a>
 
 	<div class="container">
 		<p>
@@ -49,7 +51,9 @@
 	</div>
 
 	<!--PROJECTS -->
-	<img src = "images/heading_Projects.png" class = "header">
+	<!-- Yknow, I'm going to have to repeat this like... eight times. I'm just going to go learn JS too or something and let that do the job for me.-->
+
+	<a name="projects"><img src = "images/heading_Projects.png" class = "header"></a>
 	<div class="container">
 		<p>
 			Most of my code can be found on <strong>Github</strong> or <strong>Gitlab</strong>. 
@@ -58,58 +62,122 @@
 		</p>
 	</div>
 
-	<aside id="project-box">
-		<img src = "images/square_Red.png" width="128" class="project-box-main-icon">
+	<!--SCHOOL-->
+	<img src = "images/heading_project_School.png" width = "512" class = "header">
+	<script type="text/javascript">createProjectBox(
+		"images/Rover.png",
+		"Twilight Soldier : DUSK",
+		"An oriental/cyberpunk hack-and-slash.",
+		true,
+		false,
+		"AI Spawning, Reinforcement and Patrol",
+		"",
+		"GitLab",
+		"https://gitlab.com/Kaiskii/twilightsoldier"
+	);</script>
 
-		<h1>Project GOLD</h1>
-		<p><em>A portfolio website, built from the ground up.</em></p>
-		<a href="#">Github</a>
+	<script type="text/javascript">createProjectBox(
+		"images/square_Red.png",
+		"Eathan Fry : Galactic Pirate Chef",
+		"A beat-em-up with cooking minigames.",
+		true,
+		false,
+		"AI Spawning and Attack",
+		"",
+		"???"
+	);</script>
 
-		<div class ="project-box-inline-icons">
-			<img src = "images/tag_Art.png" alt="About" width="64">
-			<img src = "images/tag_Tech.png" alt="Portfolio" width="64">
-		</div>
-	</aside>
+	<script type="text/javascript">createProjectBox(
+		"images/square_Red.png",
+		"CyberPaw",
+		"A two-player splitscreen platformer.",
+		true,
+		false,
+		"Procedural Map Generation",
+		"",
+		"???"
+	);</script>
 
-	<aside id="project-box">
-		<img src = "images/square_Red.png" width="128" class="project-box-main-icon">
+	<!--PERSONAL-->
+	<img src = "images/heading_project_Personal.png" width = "512" class = "header">
+	<script type="text/javascript">createProjectBox(
+		"images/square_Red.png",
+		"Project GOLD",
+		"A portfolio website, built from the ground up. A foray into HTML, CSS, and JavaScript.",
+		true,
+		true,
+		"I think it's everything...?",
+		"Yep.",
+		"GitHub",
+		"https://github.com/Mygnol/Mygnol.github.io"
+	);</script>
 
-		<h1>Untower</h1>
-		<p><em>A <strong>mobile</strong> tower defense game. A SemJam 2019 submission.</em></p>
-		<a href="#">Gitlab</a>
-		<a href="#">Itch.io</a>
+	<script type="text/javascript">createProjectBox(
+		"images/square_Red.png",
+		"Untower",
+		"A <strong>mobile</strong> tower defense game. A KDU Oct SemJam 2019 submission. <strong>Playable in browser!</strong>",
+		true,
+		true,
+		"AI Wave Spawning and Movement",
+		"Title Screen",
+		"GitLab",
+		"https://gitlab.com/Kaiskii/untower",
+		true,
+		"Itch.io",
+		"https://kaiskii.itch.io/untower"
 
-		<div class ="project-box-inline-icons">
-			<img src = "images/tag_Art.png" alt="About" width="64">
-			<img src = "images/tag_Tech.png" alt="Portfolio" width="64">
-		</div>
-	</aside>
+	);</script>
 
+	<script type="text/javascript">createProjectBox(
+		"images/square_Red.png",
+		"Help, I'm Trapped In a Submarine...",
+		"A limited information submarine simulator. A GMTK Jam 2019 submission.<br>Placed #53 overall among 2600 submissions. <strong>Playable in browser!</strong>",
+		true,
+		true,
+		"Submarine Systems (Excluding Radar)",
+		"Background, Title and End Screens",
+		"GitLab",
+		"https://gitlab.com/Kaiskii/gmtk2019-lvk",
+		true,
+		"Itch.io",
+		"https://kaiskii.itch.io/help-im-stuck-in-a-submarine"
+	);</script>
 
-	<aside id="project-box">
-		<img src = "images/square_Red.png" width="128" class="project-box-main-icon">
+	<script type="text/javascript">createProjectBox(
+		"images/square_Red.png",
+		"High-Speed Crowbar Feud",
+		"A survival beat-em-up. A Global Game Jam Jam 2019 submission.",
+		false,
+		true,
+		"",
+		"Background, Title and End Screens",
+		"GitLab",
+		"https://gitlab.com/XlucarioZ/ggj-19-crowbar",
+		true,
+		"Global Game Jam",
+		"https://globalgamejam.org/2019/games/fight-home-highspeed-crowbar-feud"
+	);</script>
 
-		<h1>Help, I'm Trapped In a Submarine...</h1>
-		<p><em>A limited information submarine simulator. A GMTK Jam 2019 submission.</em></p>
-		<a href="#">Gitlab</a>
-		<a href="#">Itch.io</a>
+	<script type="text/javascript">createProjectBox(
+		"images/square_Red.png",
+		"German Flatulence XXX",
+		"A multiple-life platformer. A KDU Oct SemJam 2018 submission.",
+		false,
+		true,
+		"",
+		"Background, Title and End Screens, Tilesets, Sprites",
+		"GitLab",
+		"https://gitlab.com/Kaiskii/semjam-sept2018",
+		true,
+		"Itch.io",
+		"https://bewinged.itch.io/german-flatulence-xxx"
+	);</script>
 
-		<div class ="project-box-inline-icons">
-			<img src = "images/tag_Tech.png" alt="Portfolio" width="64">
-		</div>
-	</aside>
+	<!--CONTACT -->
+	<a name="contact"><img src = "images/heading_Contact.png" class = "header"></a>
 
-
-	<aside id="project-box">
-		<img src = "images/square_Red.png" width="128" class="project-box-main-icon">
-		<h1>High-Speed Crowbar Feud</h1>
-		<p><em>A survival beat-em-up. A Global Game Jam Jam 2019 submission.</em></p>
-		<a href="#">Gitlab</a>
-
-		<div class ="project-box-inline-icons">
-			<img src = "images/tag_Art.png" alt="About" width="64">
-		</div>
-	</aside>
+	<!--RESUME -->
+	<a name="resume"><img src = "images/heading_Resume.png" class = "header"></a>
 
 	<footer id="main-footer">
 		<div class="container">
