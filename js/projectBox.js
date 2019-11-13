@@ -5,15 +5,21 @@ function createProjectBox(displayImage, projectName, projectDesc, isTech, isArt,
 
 		document.write('<img src =' + String(displayImage) + ' width="128" class="project-box-main-icon">');
 
-		document.write('<h1>' + projectName + '</h1>');
-		document.write('<p><em>' + projectDesc + '</em></p>');
-			
-		document.write('<h2>Links:</h2>');
-		document.write('<a href="' + sourceLink + '">' + sourceName + '</a> ');
-		if(isPlayable)
-		{
-			document.write('<a href="' + siteLink + '">' + siteName + '</a>');
-		}
+		document.write('<div>')
+			document.write('<h1>' + projectName + '</h1>');
+			document.write('<p><em>' + projectDesc + '</em></p>');
+		document.write('</div>');
+
+		document.write('<div class = "project-box-img-with-text">')
+			document.write('<br><h2>Links:</h2>');
+			document.write('<a href="' + sourceLink + '">' + sourceName + '</a> ');
+			if(isPlayable)
+			{
+				document.write('<a href="' + siteLink + '">' + siteName + '</a>');
+			}
+
+		document.write('</div>');
+
 
 		document.write('<div class ="project-box-inline-icons">');
 

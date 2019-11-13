@@ -97,6 +97,7 @@ strong{
 
 #project-box{
 	border: 10px solid #bd8801;
+	border-radius: 10px;
 	position: relative;
 
 	margin-left: 30%;
@@ -104,8 +105,9 @@ strong{
 	margin-bottom: 10px;
 
 	padding: 10px;
+	padding-bottom: 60px;
 
-	min-width: 400px;
+	min-width: 600px;
 }
 
 #project-box::before{
@@ -149,11 +151,16 @@ strong{
 	color: #bd8801;
 }
 
+#project-box strong{
+	color: red;
+}
+
 #project-box img{
 	float:left;
 	max-height: 100%;
 	max-width: 100%;
 	object-fit: contain;
+	display: block;
 }
 
 
@@ -169,3 +176,15 @@ strong{
 	right: 0%;
 }
 
+.project-box-img-with-text {
+	position: absolute;
+	display: block;
+	margin-top: 128px;
+	bottom: 5%;
+	left: 2%;
+}
+
+.project-box-img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
