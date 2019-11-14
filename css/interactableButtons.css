@@ -1,53 +1,54 @@
+.buttonHome{
+	width: 208px;
+	height: 77px;
+	background: url(../images/navButtons/home.png) no-repeat;
+	display: inline-block;
+	object-fit: cover;
+	margin: 0;
+}
+
+.buttonHome:hover{
+	background: url(../images/navButtons/home_sel.png) no-repeat;
+}
+
+
 .buttonAbout{
 	width: 208px;
 	height: 77px;
-	background: url(../images/button_About.png) no-repeat;
+	background: url(../images/navButtons/about.png) no-repeat;
 	display: inline-block;
-
+	object-fit: cover;
 	margin: 0;
 }
 
 .buttonAbout:hover{
-	background: url(../images/button_About_sel.png) no-repeat;
+	background: url(../images/navButtons/about_sel.png) no-repeat;
 }
 
 .buttonProjects{
 	width: 208px;
 	height: 77px;
-	background: url(../images/button_Projects.png) no-repeat;
+	background: url(../images/navButtons/projects.png) no-repeat;
 	display: inline-block;
-
+	object-fit: cover;
 	margin: 0;
 }
 
 .buttonProjects:hover{
-	background: url(../images/button_About_sel.png) no-repeat;
+	background: url(../images/navButtons/projects_sel.png) no-repeat;
 }
 
 .buttonContact{
 	width: 208px;
 	height: 77px;
-	background: url(../images/button_Contact.png) no-repeat;
+	background: url(../images/navButtons/contact.png) no-repeat;
 	display: inline-block;
-
+	object-fit: cover;
 	margin: 0;
 }
 
 .buttonContact:hover{
-	background: url(../images/button_About_sel.png) no-repeat;
-}
-
-.buttonResume{
-	width: 208px;
-	height: 77px;
-	background: url(../images/button_Resume.png) no-repeat;
-	display: inline-block;
-
-	margin: 0;
-}
-
-.buttonResume:hover{
-	background: url(../images/button_About_sel.png) no-repeat;
+	background: url(../images/navButtons/contact_sel.png) no-repeat;
 }
 
 .tooltip {

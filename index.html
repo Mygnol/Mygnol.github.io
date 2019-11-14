@@ -4,188 +4,52 @@
 	<title>
 		Long | Home
 	</title>
-	<script src="js/projectBox.js"></script>
+	<script src="js/pageSharedElements.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/pageStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/projectBox.css">
+	<link rel="stylesheet" type="text/css" href="css/showcaseBox.css">
 	<link rel="stylesheet" type="text/css" href="css/interactableButtons.css">
 </head>
 <body>
+	<!--Header-->
 	<header id="main-header">
 	</header>
 
-	<!-- Title -->
-	<img src = "images/title.png" alt="Long Yee Ming | Game Programmer" class = "header">
-	<div class="container">
-		<h1>Game Programmer | Hobbyist Artist</h1>
+	<!--NAV/HEADER-->
+	<script type="text/javascript">makeHeader()</script>
+
+	<div class = "showcase-container">
+		<!--HOME-->
+		<a name="about"><img src = "images/heading_Showcase.png" class = "header"></a>
+
+		<script type="text/javascript">makeShowcaseBox(
+			"images/projectTitleCards/submarine_card.png",
+			"gifs/submarine.gif",
+			"",
+			"Help! I'm Trapped In A Submarine...",
+			"Limited Information Submarine Simulator"
+		)</script>
+
+		<script type="text/javascript">makeShowcaseBox(
+			"images/projectTitleCards/submarine_card.png",
+			"gifs/submarine.gif",
+			"",
+			"Twilight Soldier : Dusk",
+			"Oriental-Futuristic Hack-and-Slash"
+		)</script>
+
+		<script type="text/javascript">makeShowcaseBox(
+			"images/projectTitleCards/gold_card.png",
+			"gifs/submarine.gif",
+			"",
+			"Project : Gold",
+			"Portfolio Website"
+		)</script>
 	</div>
 
-	<!-- Navbar -->
-	<nav id="navbar">
-
-		<img src = "images/lineBreak.png" class = "lineBreak">
-
-		<ul>
-			<a href="#about"><div class = "buttonAbout"></div></a>
-			<a href="#projects"><div class = "buttonProjects"></div></a>
-			<a href="#contact"><div class = "buttonContact"></div></a>
-			<a href="#resume"><div class = "buttonResume"></div></a>
-		</ul>
-
-		<img src = "images/lineBreak.png" class = "lineBreak">
-	</nav>
-
-	<!--ABOUT -->
-	<a name="about"><img src = "images/heading_About.png" class = "header"></a>
-
-	<div class="container">
-		<p>
-			Long was born in Klang, Malaysia. His interest in programming started as early as 2008, on an online games platform known as <strong>Roblox</strong>. Although he was too young to use the scripting tools to their fullest at the time, the passion to create remained and still remains with him.
-		</p>
-
-		<p>
-			Now finishing his education at <strong>UOW KDU Glenmarie</strong>, majoring in Game Programming, he is all too aware of how much there is yet to learn...
-		</p>
-
-		<p>
-			<em>...And is all too willing to give it his best shot.</em>
-		</p>
-	</div>
-
-	<!--PROJECTS -->
-	<!-- Yknow, I'm going to have to repeat this like... eight times. I'm just going to go learn JS too or something and let that do the job for me.-->
-
-	<a name="projects"><img src = "images/heading_Projects.png" class = "header"></a>
-	<div class="container">
-		<p>
-			Most of my code can be found on <strong>Github</strong> or <strong>Gitlab</strong>. 
-			<br>
-			Mouse over the tag bubbles to see a summary of contributions.
-		</p>
-	</div>
-
-	<!--SCHOOL-->
-	<img src = "images/heading_project_School.png" width = "512" class = "header">
-	<script type="text/javascript">createProjectBox(
-		"images/Rover.png",
-		"Twilight Soldier : DUSK",
-		"Final Year Project. An oriental/cyberpunk hack-and-slash.",
-		true,
-		false,
-		"AI Spawning, Reinforcement and Patrol",
-		"",
-		"GitLab",
-		"https://gitlab.com/Kaiskii/twilightsoldier"
-	);</script>
-
-	<script type="text/javascript">createProjectBox(
-		"images/square_Red.png",
-		"Eathan Fry : Galactic Pirate Chef",
-		"A beat-em-up with cooking minigames.",
-		true,
-		false,
-		"AI Spawning and Attack",
-		"",
-		"???"
-	);</script>
-
-	<script type="text/javascript">createProjectBox(
-		"images/projectTitleCards/cyberpaw_card.png",
-		"CyberPaw",
-		"A two-player splitscreen platformer.",
-		true,
-		false,
-		"Procedural Map Generation",
-		"",
-		"???"
-	);</script>
-
-	<!--PERSONAL-->
-
-
-	<img src = "images/heading_project_Personal.png" width = "512" class = "header">
-	<script type="text/javascript">createProjectBox(
-		"images/projectTitleCards/gold_card.png",
-		"Project GOLD",
-		"A portfolio website, built from the ground up. A foray into HTML, CSS, and JavaScript.",
-		true,
-		true,
-		"I think it's everything...?",
-		"Yep.",
-		"GitHub",
-		"https://github.com/Mygnol/Mygnol.github.io"
-	);</script>
-
-	<script type="text/javascript">createProjectBox(
-		"images/projectTitleCards/untower_card.png",
-		"Untower",
-		"A [mobile tower] defense game. A KDU Oct SemJam 2019 submission.<br><strong>Playable in browser!</strong>",
-		true,
-		true,
-		"AI Wave Spawning and Movement",
-		"Title Screen",
-		"GitLab",
-		"https://gitlab.com/Kaiskii/untower",
-		true,
-		"Itch.io",
-		"https://kaiskii.itch.io/untower"
-
-	);</script>
-
-	<script type="text/javascript">createProjectBox(
-		"images/projectTitleCards/submarine_card.png",
-		"Help, I'm Trapped In a Submarine...",
-		"A limited information submarine simulator. A GMTK Jam 2019 submission.<br>Placed #53 overall among 2600 submissions. <br><strong>Playable in browser!</strong>",
-		true,
-		true,
-		"Submarine Systems (Excluding Radar)",
-		"Background, Title and End Screens",
-		"GitLab",
-		"https://gitlab.com/Kaiskii/gmtk2019-lvk",
-		true,
-		"Itch.io",
-		"https://kaiskii.itch.io/help-im-stuck-in-a-submarine"
-	);</script>
-
-	<script type="text/javascript">createProjectBox(
-		"images/projectTitleCards/crowbar_card.png",
-		"High-Speed Crowbar Feud",
-		"A survival beat-em-up. A Global Game Jam Jam 2019 submission.",
-		false,
-		true,
-		"",
-		"Background, Title and End Screens",
-		"GitLab",
-		"https://gitlab.com/XlucarioZ/ggj-19-crowbar",
-		true,
-		"Global Game Jam",
-		"https://globalgamejam.org/2019/games/fight-home-highspeed-crowbar-feud"
-	);</script>
-
-	<script type="text/javascript">createProjectBox(
-		"images/projectTitleCards/fart_card.png",
-		"German Flatulence XXX",
-		"A multiple-life platformer. A KDU Oct SemJam 2018 submission.",
-		false,
-		true,
-		"",
-		"Background, Title and End Screens, Tilesets, Sprites",
-		"GitLab",
-		"https://gitlab.com/Kaiskii/semjam-sept2018",
-		true,
-		"Itch.io",
-		"https://bewinged.itch.io/german-flatulence-xxx"
-	);</script>
-
-	<!--CONTACT -->
-	<a name="contact"><img src = "images/heading_Contact.png" class = "header"></a>
-
-	<!--RESUME -->
-	<a name="resume"><img src = "images/heading_Resume.png" class = "header"></a>
-
+	<!--Footer-->
 	<footer id="main-footer">
-		<div class="container">
-			Copyright &copy; 2019 Long
-		</div>
+			<p>&copy; 2019 Long</p>
 	</footer>
 </body>
 </html>
-

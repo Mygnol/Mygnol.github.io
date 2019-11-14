@@ -1,0 +1,96 @@
+/*PROJECT BOX*/
+#project-box{
+	border: 10px solid #333;
+	border-radius: 10px;
+	position: relative;
+
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 10px;
+
+	padding: 10px;
+	padding-bottom: 60px;
+
+	min-width: 600px;
+	
+	background: #f4f4f4;
+}
+
+#project-box::before{
+	content: "";
+	width: 1px;
+	margin-left: -1px;
+	float: left;
+	height: 0;
+}
+
+#project-box::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#project-box h1{
+	color:#202020;
+	text-align: left;
+}
+
+#project-box h2{
+	color:#bd8801;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+#project-box p{
+	color: #565656;
+	text-align: left;
+	margin: auto;
+}
+
+#project-box a{
+	text-align: left;
+	color:#565656;
+}
+
+#project-box em{
+	color: #bd8801;
+}
+
+#project-box strong{
+	color: red;
+}
+
+#project-box img{
+	float:left;
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	display: block;
+	border-radius: 10px;
+}
+
+
+.project-box-main-icon
+{
+	padding-right: 20px;
+}
+
+.project-box-inline-icons
+{
+	position: absolute;
+	bottom: 0%;
+	right: 1%;
+}
+
+.project-box-img-with-text {
+	position: absolute;
+	display: block;
+	margin-top: 128px;
+	bottom: 5%;
+	left: 2%;
+}
+
+.project-box-img-with-text img {
+    display: block;
+    margin: 0 auto;
+}

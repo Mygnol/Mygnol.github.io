@@ -1,14 +1,25 @@
-body{
-	background-color:#f4f4f4;
+html, body{
+	background-color:#333;
 	color:#5c4200;
 	font-family: Helvetica, sans-serif;
 	line-height:1.6em;
 	margin:0;
+}
 
-	overflow-x: hidden;
+#main-header{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:10px;
+	margin-bottom:0px;
+}
 
-	margin-left: auto;
-	margin-right: auto;
+#main-footer{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top:0px;
 }
 
 
@@ -36,14 +47,12 @@ strong{
 }
 
 .container{
+	background: #f4f4f4;
+
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
 
 	padding: 5px;
-
-	min-width: 800px;
-	max-width: 800px;
 }
 
 .header{
@@ -52,35 +61,27 @@ strong{
 	margin-right: auto;
 }
 
-#main-header{
-	background: #333;
-	color:#fff;
-	text-align: center;
-	padding:30px;
-	margin-bottom:0px;
-}
-
-#main-footer{
-	background: #333;
-	color:#fff;
-	text-align: center;
-	padding:20px;
-	margin-top:40px;
-}
-
 .lineBreak{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.dark-text p{
+	color: black;
+}
+
+.dark-text strong{
+	color: black;
+}
 
 /*navbar*/
+#navbar{
+	margin: 0;
+}
 
 #navbar ul{
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 0;
 	margin-bottom: 0;
 	list-style: none;
@@ -90,101 +91,5 @@ strong{
 	display:inline-block;
 	margin-left: 20px;
 	margin-right: 20px;
-	width: 150px;
-}
-
-/*PROJECT BOX*/
-
-#project-box{
-	border: 10px solid #bd8801;
-	border-radius: 10px;
-	position: relative;
-
-	margin-left: 30%;
-	margin-right: 30%;
-	margin-bottom: 10px;
-
-	padding: 10px;
-	padding-bottom: 60px;
-
-	min-width: 600px;
-}
-
-#project-box::before{
-	content: "";
-	width: 1px;
-	margin-left: -1px;
-	float: left;
-	height: 0;
-	/*padding-top: 591.44px/1127.34px*100%;*/
-}
-
-#project-box::after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
-#project-box h1{
-	color:#202020;
-	text-align: left;
-}
-
-#project-box h2{
-	color:#bd8801;
-	margin-bottom: 0;
-	text-align: left;
-}
-
-#project-box p{
-	color: #565656;
-	text-align: left;
-	margin: auto;
-}
-
-#project-box a{
-	text-align: left;
-	color:#565656;
-}
-
-#project-box em{
-	color: #bd8801;
-}
-
-#project-box strong{
-	color: red;
-}
-
-#project-box img{
-	float:left;
-	max-height: 100%;
-	max-width: 100%;
-	object-fit: contain;
-	display: block;
-}
-
-
-.project-box-main-icon
-{
-	padding-right: 20px;
-}
-
-.project-box-inline-icons
-{
-	position: absolute;
-	bottom: 0%;
-	right: 0%;
-}
-
-.project-box-img-with-text {
-	position: absolute;
-	display: block;
-	margin-top: 128px;
-	bottom: 5%;
-	left: 2%;
-}
-
-.project-box-img-with-text img {
-    display: block;
-    margin: 0 auto;
+	width: 100px;
 }

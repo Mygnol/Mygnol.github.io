@@ -1,0 +1,81 @@
+/*SHOWCASE BOX*/
+.showcase-container{
+	background: rgb(174,174,174);
+	padding:50px;
+	padding-top: 10px;
+	margin: 0px;
+
+	border-top: 30px solid #333;
+
+	text-align: center;
+}
+
+.showcase-container h1{
+	color:rgb(255,198,010);
+}
+
+.showcase-container p{
+	margin-top: 5px;
+}
+
+.showcase-text-holder{
+	display: inline-block;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#showcase-box{
+	position: relative;
+
+	display: inline-block;
+
+	border: 5px solid #333;
+	border-radius: 10px;
+	padding: 50px;
+
+
+	background: #f4f4f4;
+	/*
+	background-image: url(../images/projectTitleCards/submarine_card.png);
+	background-size: cover;
+	background-position: center;
+	*/
+	width: 315px;
+	height: 230px;
+}
+
+#showcase-box:hover{
+	border: 5px solid rgb(255,211,110);
+}
+
+#showcase-box img{
+	position:absolute;
+	top: 0;
+	left:0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+
+	width: 100%;
+	height: 100%; 
+	object-fit: cover;
+}
+
+#showcase-box img.top:hover{
+	opacity:0;
+}
+
+#showcase-box::before{
+	content: "";
+	width: 1px;
+	margin-left: -1px;
+	float: left;
+	height: 0;
+}
+
+#showcase-box::after{
+	content: "";
+	display: table;
+	clear: both;
+}
