@@ -60,7 +60,7 @@ function makeHeader(){
 			document.write('<a href="index.html"><div class = "buttonHome"></div></a>');
 			document.write('<a href="about.html"><div class = "buttonAbout"></div></a>');
 			document.write('<a href="projects.html"><div class = "buttonProjects"></div></a>');
-			document.write('<a href="contact.html"><div class = "buttonContact"></div></a>');
+			document.write('<a href="about.html#contact"><div class = "buttonContact"></div></a>');
 		document.write('</ul>');
 
 		document.write('<img src = "images/lineBreak.png" class = "lineBreak">');

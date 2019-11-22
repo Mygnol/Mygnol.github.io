@@ -3,6 +3,7 @@
 	background: rgb(174,174,174);
 	padding:50px;
 	padding-top: 10px;
+
 	margin: 0px;
 
 	border-top: 30px solid #333;
@@ -16,6 +17,11 @@
 
 .showcase-container p{
 	margin-top: 5px;
+	text-align: center;
+}
+
+.showcase-container strong{
+	color:black;
 }
 
 .showcase-text-holder{
