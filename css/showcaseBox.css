@@ -85,3 +85,12 @@
 	display: table;
 	clear: both;
 }
+
+img.showcase-inline{
+	padding: 10px;
+	display: inline;
+
+	width: 315px;
+	height: 230px;
+	object-fit: cover;
+}

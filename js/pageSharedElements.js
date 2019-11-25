@@ -10,10 +10,10 @@ function createProjectBox(displayImage, projectName, projectDesc, isTech, isArt,
 
 		document.write('<div class = "project-box-img-with-text">')
 			document.write('<br><h2>Links:</h2>');
-			document.write('<a href="' + sourceLink + '">' + sourceName + '</a>');
+			document.write('<a href="' + sourceLink + '"target="_blank">' + sourceName + '</a>');
 			if(isPlayable)
 			{
-				document.write(' <a href="' + siteLink + '">' + siteName + '</a>');
+				document.write(' <a href="' + siteLink + '"target="_blank">' + siteName + '</a>');
 			}
 
 		document.write('</div>');
@@ -85,6 +85,11 @@ function makeShowcaseBox(imgLinkTop,imgLinkBottom,clickLink,title,desc){
 	document.write('</div>');
 
 	document.write('</a>');
+}
+
+function makeButton(buttonType,target,icon,width)
+{
+	document.write('<button class="button '+buttonType+'"><a href="'+target+'" target="_blank"><img class = "a" src = "'+icon+'" width="'+width+'"></img></a></button>');
 }
 
 /*

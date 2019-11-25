@@ -68,7 +68,7 @@ strong{
 }
 
 .dark-text p{
-	padding-top: 20px;
+	padding-top: 10px;
 
 	color: black;
 	margin-left: 20%;
@@ -100,5 +100,13 @@ strong{
 }
 
 img.a{
+	display:inline-block;
 	vertical-align: sub;
+}
+
+.project-summary{
+	margin-top: 45px;
+	margin-bottom: 0;
+	background: #f4f4f4;
+	text-align: justify;
 }
