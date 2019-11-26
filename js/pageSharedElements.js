@@ -1,4 +1,4 @@
-function createProjectBox(displayImage, projectName, projectDesc, isTech, isArt, techContrib, artContrib,sourceName,sourceLink,isPlayable,siteName,siteLink) {
+function createProjectBox(displayImage, projectName, projectDesc, isTech, isArt, techContrib, artContrib,sourceName,sourceLink,isPlayable,siteName,siteLink,isUnreal) {
 	document.write('<aside id="project-box">');
 
 		document.write('<img src =' + String(displayImage) + ' width="128" class="project-box-main-icon">');
@@ -20,7 +20,6 @@ function createProjectBox(displayImage, projectName, projectDesc, isTech, isArt,
 
 
 		document.write('<div class ="project-box-inline-icons">');
-
 			if(isTech){
 			document.write('<div class = "tooltip"><img src = "images/tag_Tech.png" alt="Tech" width="64">');
 				
@@ -39,6 +38,16 @@ function createProjectBox(displayImage, projectName, projectDesc, isTech, isArt,
 				document.write('</span>');
 
 			document.write('</div>');
+			}
+
+			if(isUnreal){
+				document.write('<div class = "tooltip"><img src = "images/tag_unreal.png" alt="Unreal Engine" width="64">');
+				document.write('</div>');
+			}
+			else
+			{
+				document.write('<div class = "tooltip"><img src = "images/tag_unity.png" alt="Unity Engine" width="64">');
+				document.write('</div>');
 			}
 		document.write('</div>');
 
@@ -89,7 +98,7 @@ function makeShowcaseBox(imgLinkTop,imgLinkBottom,clickLink,title,desc){
 
 function makeButton(buttonType,target,icon,width)
 {
-	document.write('<button class="button '+buttonType+'"><a href="'+target+'" target="_blank"><img class = "a" src = "'+icon+'" width="'+width+'"></img></a></button>');
+	document.write('<a href="'+target+'" target="_blank"><button class="button '+buttonType+'"><img class = "a" src = "'+icon+'" width="'+width+'"></img></button></a>');
 }
 
 /*
