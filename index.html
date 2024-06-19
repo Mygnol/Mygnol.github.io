@@ -43,6 +43,40 @@
 	</div>
 	
 	<!-- TODO: Write some JS to squish these into more compact forms -->
+
+<style>
+.feature-rounded-box {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 90%; /* Limit maximum width */
+    margin: 20px auto;
+    text-align: center;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual effect */
+}
+
+.feature-rounded-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature-video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.feature-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
 	<div class = "feature-rounded-box">
 		<img src="https://i.imgur.com/PVl4ImQ.png" alt="Image">
 		<!--
