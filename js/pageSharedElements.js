@@ -64,13 +64,15 @@ function makeHeader(){
 	//NAVBAR
 	document.write('<nav id="navbar">');
 		//document.write('<img src = "images/lineBreak.png" class = "lineBreak">');
-
+			
+		document.write('<div class = "spacer"></div>');
 		document.write('<ul>');
 			document.write('<a href="index.html"><div class = "buttonHome"></div></a>');
 			document.write('<a href="about.html"><div class = "buttonAbout"></div></a>');
 			document.write('<a href="projects.html"><div class = "buttonProjects"></div></a>');
 			document.write('<a href="about.html#contact"><div class = "buttonContact"></div></a>');
 		document.write('</ul>');
+		document.write('<div class = "spacer"></div>');
 
 		//document.write('<img src = "images/lineBreak.png" class = "lineBreak">');
 	document.write('</nav>');
