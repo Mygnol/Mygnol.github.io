@@ -10,7 +10,7 @@ html, body{
 	background: #333;
 	color:#fff;
 	text-align: center;
-	padding:10px;
+	padding:20px;
 	margin-bottom:0px;
 }
 
@@ -57,7 +57,7 @@ strong{
 
 .spacer{
 	background: #333;
-	padding-top:45px;
+	padding-top:60px;
 }
 
 .header{
