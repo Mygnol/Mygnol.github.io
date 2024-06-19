@@ -60,7 +60,7 @@ function makeHeader(){
 
 	//TITLE
 	document.write('<img src = "images/title.png" alt="Long Yee Ming | Game Programmer" class = "header">');
-
+	document.write('<br>');
 	//NAVBAR
 	document.write('<nav id="navbar">');
 		//document.write('<img src = "images/lineBreak.png" class = "lineBreak">');
