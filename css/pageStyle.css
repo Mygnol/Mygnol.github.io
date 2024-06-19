@@ -52,12 +52,12 @@ strong{
 	margin-left: auto;
 	margin-right: auto;
 
-	padding: 5px;
+	padding: 0px;
 }
 
 .spacer{
 	background: #333;
-	padding:20px;
+	padding-top:20px;
 }
 
 .header{
