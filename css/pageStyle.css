@@ -55,6 +55,11 @@ strong{
 	padding: 5px;
 }
 
+.spacer{
+	background: #333;
+	padding:20px;
+}
+
 .header{
 	display: block;
 	margin-left: auto;
